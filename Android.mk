@@ -9,16 +9,13 @@ LOCAL_SRC_FILES:= \
 		devtree.c \
 		usbmisc.c
 
-
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE := lsusb
 
 LOCAL_C_INCLUDES += external/libusb/libusb
 
-LOCAL_STATIC_LIBRARIES := libc 
-
-LOCAL_SHARED_LIBRARIES := libusb
+LOCAL_SHARED_LIBRARIES := libc libusb
 
 LOCAL_CFLAGS += -g -O2
 
